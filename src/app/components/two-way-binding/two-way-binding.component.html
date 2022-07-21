@@ -1,0 +1,14 @@
+<div class="class">
+    <h2>Two way databiding</h2>
+
+    <form >
+        <input type="text" [(ngModel)]="name" name="name"><br><br>
+        <input type="email" name="email" [(ngModel)]="email"><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div *ngIf="name !== '' ">
+        <p>O nome é: {{ name }} </p> <br>
+        <p>E seu email é: {{ email }}</p>
+    </div>
+</div>
